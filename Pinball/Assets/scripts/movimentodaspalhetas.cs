@@ -35,22 +35,22 @@ public class FlippersController : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            _motor_left.motorSpeed = -350;
+            _motor_left.motorSpeed = -550;
             _leftFliperHinge.motor = _motor_left;
         }
         else if (Input.GetKeyUp(KeyCode.LeftArrow))
         {
-            _motor_left.motorSpeed = 200f;
+            _motor_left.motorSpeed = 300f;
             _leftFliperHinge.motor = _motor_left;
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            _motor_right.motorSpeed = 350;
+            _motor_right.motorSpeed = 550;
             _rightFliperHinge.motor = _motor_right;
         }
         else if (Input.GetKeyUp(KeyCode.RightArrow))
         {
-            _motor_right.motorSpeed = -200;
+            _motor_right.motorSpeed = -300;
             _rightFliperHinge.motor = _motor_right;
         }
     }
